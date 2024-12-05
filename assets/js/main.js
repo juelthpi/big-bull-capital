@@ -8,14 +8,7 @@ jQuery(document).ready(function ($) {
           $(".header-area").removeClass("menu-bg");
       }
     }
- 
-    $(document).on("click", function (event) {
-      const $div = $("#outside-click");
-      const $navbarText = $("#navbarText");
-      if (!$div.is(event.target) && $div.has(event.target).length === 0) {
-        $navbarText.removeClass("show");
-      }
-    });
+  
     $(window).on('scroll', function() {
       if ($(window).scrollTop() > 300) {
           $('header').addClass('menu-bg-fixed');
@@ -35,6 +28,16 @@ jQuery(document).ready(function ($) {
     $('.counter').counterUp({
       delay: 20,
       time: 1500
+  });
+
+  $('.nav-bar-icon').click(function(e) {
+    e.stopPropagation(); // Prevent click event from bubbling up
+    $('.navbar-nav').slideToggle();
+  });
+  $(document).click(function(e) {
+    if (!$(e.target).closest('.navbar-nav').length) {
+      $('.navbar-nav').slideUp();
+    }
   });
 
 })

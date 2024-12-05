@@ -20,17 +20,163 @@
   }
   .header-right {
     margin-top: 25px;
+    display: none;
   }
+  .navbar-brand{
+    order: -2;
+    margin-left: 0 !important;
+  }
+  .navbar-nav{
+    flex-direction: row;
+     
+  }
+  .nav-bar-icon {
+    margin-right: 0;
+    order: 1;
+    margin-left: 20px;
+  }
+  .common-heading-section h2 {
+    line-height: 65px;
+    font-size: 48px;
+  }
+  .hero-section {
+    padding-top: 80px;
+     
+  }
+  .hero-circle img {
+    width: 270px;
+    height: 270px;
+  }
+  .common-heading-section h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+ 
+  .achievement-item h4 {
+    font-size: 30px;
+    line-height: 40.64px;
+  }
+  .achievement-item{
+    width:45%;
+  }
+  .achievements-section{
+    flex-wrap: wrap;justify-content: space-between;
+    padding: 30px 15px;
+  }
+  .achievement-item{
+    border: none;
+    padding-right:0px;
+  }
+  .shape-19{
+    z-index: -9;
+  }
+  .footer {
+    gap: 46px;
+    flex-wrap: wrap;
+  }
+  .footer-description-box {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-pagination-box {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .newsletter-form h5, .footer-pagination h4 {
+    font-size: 22px;}
+    .support-btn {
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    .step-number span {
+      font-size: 30px;
+    }
 }
 @media screen and (max-width:767px) {
+  .border-gradient-rounded {
+    height: 38px;
+    width: 38px;
+  }
+  .support-btn li a {
+    min-width: 300px;
+    padding:7px 15px;
+    gap: 18px;
+    font-size: 15px;
+  }
+  .accordion-button:not(.collapsed) {
+    font-size: 22px;
+  }
+  .step-card img {
+    width: 50px;
+    height: 50px;
+  }
+  .features-item p{
+    font-weight: 400;
+  }
+  .offer-card-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  .achievement-item {
+    width:100%;
+  }
+  .achievement-item h4 {
+    font-size: 26px;
+    line-height: 40.64px;
+  }
+  .common-heading-section h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .platforms-container {
+    padding: 70px 15px;
+  }
+  .primary-btn, .secondary-btn {
+    padding: 10px 24px;
+    font-size: 18px;
+  }
+  .data-counter-card{
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+  .small-circle{
+    display: none;
+  }
+  .hero-section {
+    padding-top: 55px;
+  }
+  .common-heading-section h2 {
+    line-height: 50px;
+    font-size: 35px;
+  }
+  .header {
+    padding: 5px 10px;
+  }
+ 
+  .navbar-nav {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 100%;
+    display: none;
+    margin-top: 10px;
+    background: #041116;
+    border-radius: 10px;
+  }
+  .navbar-brand img {
+    max-width: 100px;
+  }
   .footer {
     gap:35px;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
   }
   .footer-item h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .footer-subscribe button {
  
@@ -42,9 +188,46 @@
   .footer-logo img {
     max-width: 105px;
   }
+  .platform-features h4, .choose-key-feature h5 {
+    font-size: 20px;
+  }
+  .footer-description-box{
+    width: 100%;
+  }
+  .newsletter-form {
+    margin: auto;
+    margin-top: 40px;
+  }
+  .footer-pagination-box {
+    width: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .center-circle-1 {
+    width: 335px;
+    height: 335px;
+  }
  
 }
 @media screen and (max-width:480px) {
+  .shape{
+    max-width: 350px !important;
+  }
+  .hero-circle-inner{
+    width: 330px;
+  }
+  .footer-item.footer-pagination {
+    width: 50%;
+  }
+  .accordion-button:not(.collapsed),.accordion-button {
+    font-size:18px;
+    line-height:30px;
+  }
+  .common-heading-section h3 {
+    font-size:28px;
+    line-height:35px;
+  }
   .navbar {
     padding-left:0px;
     padding-right:0px;
@@ -61,7 +244,21 @@
   body{
     overflow-x: hidden !important;
   }
-  
+  .common-heading-section h2 {
+    line-height: 40px;
+    font-size: 28px;
+  }
+  .data-counter-card h5 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .data-counter-card {
+    min-width: 200px;
+    padding:16px 12px;
+  }
 }
 
 
