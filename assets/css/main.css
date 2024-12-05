@@ -609,7 +609,7 @@ body{
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 60px;
-  overflow-x: hidden !important;
+ 
 }
 .hero-bottom-section{
   margin-top: -180px;
@@ -1178,7 +1178,7 @@ body{
 .footer-logo{
   padding-top: 70px;
 }
-.platform-thumbnails img{
+.platform-thumbnails img,.faq-thumbnails img{
   cursor: pointer;
   transition: 0.5s;
   animation: zooming 2s infinite ease-in-out alternate;}
