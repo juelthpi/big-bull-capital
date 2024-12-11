@@ -1203,4 +1203,6 @@ body{
 .navbar-nav .nav-link.active{
   color: #0D8F77;
 }
- 
+.secondary-btn.nav-link.active:hover,.primary-btn.nav-link:hover,.primary-btn.nav-link.active{
+color:#fff;
+}
